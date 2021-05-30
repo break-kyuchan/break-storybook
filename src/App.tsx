@@ -1,10 +1,10 @@
 import React from 'react';
+import { Header } from "./Components/Header/Templates/Header"
 
 function App() {
   return (
     <>
-    <div>안녕</div>
-    <div>안녕하세여?</div>
+      <Header/>
     </>
   );
 }
