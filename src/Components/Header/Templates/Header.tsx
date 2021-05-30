@@ -19,8 +19,6 @@ justify-content: space-between;
 align-items: center;
 width: 1440px;
 height: 86px;
-padding : 0 80px;
-margin-top : 35px;
 `
 
 const Logo = styled.img`
