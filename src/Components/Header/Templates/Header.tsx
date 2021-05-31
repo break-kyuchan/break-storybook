@@ -19,6 +19,7 @@ justify-content: space-between;
 align-items: center;
 width: 1440px;
 height: 86px;
+margin : 0 auto;
 `
 
 const Logo = styled.img`
