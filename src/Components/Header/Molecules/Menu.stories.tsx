@@ -7,6 +7,6 @@ export default {
   component: Menu,
 } as Meta;
 
-const Template: Story = args => <Menu {...args} />;
+export const Template: Story = args => <Menu {...args} />;
 
-export const Default = Template.bind({});
+

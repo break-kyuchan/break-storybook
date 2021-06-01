@@ -10,3 +10,4 @@ export default {
 const Template : Story = args => <MainCard {...args} />
 
 export const Default = Template.bind({});
+
