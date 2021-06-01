@@ -1,13 +1,12 @@
-// import React, { Children } from "react"
-// import {Story, Meta} from "@storybook/react"
-// import { MainCards } from "./MainCards"
-// import { MainData, MainDataType  } from "../../../../Data/MainData";
+import React from "react"
+import {Story, Meta} from "@storybook/react"
+import { MainCards } from "./MainCards"
 
-// export default {
-//     title: "Main/MainContents/Molecules/MainCards",
-//     component : MainCards,
-// } as Meta;
+export default {
+    title: "Main/MainContents/Molecules/MainCards",
+    component : MainCards,
+} as Meta;
 
-// const Template : Story<MainDataType> = args => <MainCards {...args} />
+const Template : Story = args => <MainCards {...args} />
 
-// export const Default = Template.bind({});
+export const Default = Template.bind({});

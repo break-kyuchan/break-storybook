@@ -1,40 +1,43 @@
 import React from "react";
 import styled from "styled-components";
-import { MainData } from "../../../../../Data/MainData"
+import { MainDataType } from "../../../../../Data/MainData"
 
-// interface Props {
-//     data : MainDataType;
-// }
+interface Props {
+    data? : MainDataType;
+}
+//처음 불러온 데이터가 타입이 지정되어 있어도 프롭스로 받아오는 데이터는 타입을 지정해줘야한다.
 
-export const MainCard: React.FC= () => {
+export const MainCard: React.FC<Props> = ({data}) => {
     // useEffect(() => {
     //     getOrderLists();
     // }, []);
+
   return (
     <>
-      <MainCardBack>
+    <MainCardBack>
         <CardPicture src="/IMG_1376.WEBP" />
+        {/* <CardPicture src="data?.img_source" /> */}
         <CardContents>
           <CardName>
-            <span>{MainData[0].cardSort}</span>
-            <span>{MainData[0].playerName}</span>
+            <span>{data?.cardSort}</span>
+            <span>{data?.playerName}</span>
           </CardName>
           <CardTag>
-            <span>{MainData[0].cardTag}</span>
+            <span>{data?.cardTag}</span>
           </CardTag>
           <CardGrade>
-            <span color={MainData[0].color}>PSA 10</span>
+            <span color={data?.color}>PSA 10</span>
             <span>brg 10</span>
             <span>break A</span>
             <CardGradeLine />
           </CardGrade>
           <CardPriceWrap>
             <LowestPrice>
-              <span>{MainData[0].lowestPrice}</span>
+              <span>{data?.lowestPrice}</span>
               <span>최저 판매가</span>
             </LowestPrice>
             <LatestPrice>
-              <span>{MainData[0].latestPrice}</span>
+              <span>{data?.latestPrice}</span>
               <span>최근 거래가</span>
             </LatestPrice>
           </CardPriceWrap>
