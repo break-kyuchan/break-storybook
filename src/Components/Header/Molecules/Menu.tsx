@@ -3,7 +3,7 @@ import styled from "styled-components"
 import {Button} from "../Atoms/Button"
 import {CgProfile} from "react-icons/cg"
 
-const menuTitle:Array<string> = [
+const menuTitle:string[]= [
     "HOME",
     "GRADING",
     "MARKET",
