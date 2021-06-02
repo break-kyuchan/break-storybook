@@ -1,12 +1,12 @@
 import React from 'react';
 import { Header } from "./Components/Header/Templates/Header"
-import { ProductType } from './Page/Search/Organisms/ProductType';
+import { SideBarContents } from './Page/Search/Organisms/SideBarContents';
 
 function App() {
   return (
     <>
       <Header/>
-      <ProductType/>
+      <SideBarContents/>
     </>
   );
 }

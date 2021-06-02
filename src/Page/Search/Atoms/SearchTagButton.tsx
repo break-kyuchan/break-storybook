@@ -31,6 +31,8 @@ height:26px;
 border: 1px solid #6034b0;
 box-sizing: border-box;
 background: ${props=>(props.check ? '#6034b0' : '#ffffff')};
+margin-right: 5px;
+margin-bottom : 10px;
 
 span{
     color : ${props=>(props.check ? '#ffffff' : '#000000')};
