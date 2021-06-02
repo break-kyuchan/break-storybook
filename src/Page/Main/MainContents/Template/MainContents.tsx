@@ -7,6 +7,10 @@ export const MainContents:React.FC = () => {
         <>
         <MainBack>
             <MainBreakPick/>
+            <MainBreakPick/>
+            <MainBreakPick/>
+            <MainBreakPick/>
+            <MainBreakPick/>
         </MainBack>
           </>  
     );

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components"
 
-export interface SectionTitleProps{
+export interface BreakPickProps{
     title?: string
     subTitle?: string
 }
 
-export const SectionTitle:React.FC<SectionTitleProps> = ({
+export const BreakPick:React.FC<BreakPickProps> = ({
     title = "break's Pick",
     subTitle= "break 에서 가장 핫하고 새로운 카드들입니다."
 }) => {
