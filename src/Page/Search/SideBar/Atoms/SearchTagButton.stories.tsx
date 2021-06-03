@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import { SearchTagButton } from './SearchTagButton'
 
 export default {
-  title: 'Search/Atoms/SearchTagButton',
+  title: 'Search/SideBar/Atoms/SearchTagButton',
   component: SearchTagButton,
 } as Meta;
 

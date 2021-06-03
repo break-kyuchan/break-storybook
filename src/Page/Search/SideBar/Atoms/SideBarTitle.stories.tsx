@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import { SideBarTitle } from './SideBarTitle'
 
 export default {
-  title: 'Search/Atoms/SideBarTitle',
+  title: 'Search/SideBar/Atoms/SideBarTitle',
   component: SideBarTitle,
 } as Meta;
 

@@ -3,10 +3,13 @@ import { Story, Meta } from '@storybook/react';
 import { ProductType } from './ProductType'
 
 export default {
-  title: 'Search/Molecules/ProductType',
+  title: 'Search/SideBar/Molecules/ProductType',
   component: ProductType,
 } as Meta;
 
 const Template: Story = args => <ProductType {...args} />;
 
-export const Default = Template.bind({});
+export const productType = Template.bind({});
+productType.args={
+  title:"PRODUCT TYPE"
+}

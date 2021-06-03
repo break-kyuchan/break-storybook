@@ -3,10 +3,10 @@ import { Story, Meta } from '@storybook/react';
 import { SideBarContents } from './SideBarContents'
 
 export default {
-  title: 'Search/Organisms/SideBarContents',
+  title: 'Search/SideBar/Organisms/SideBarContents',
   component: SideBarContents,
 } as Meta;
 
 const Template: Story = args => <SideBarContents {...args} />;
 
-export const Default = Template.bind({});
+export const sideBarcontetns = Template.bind({});
