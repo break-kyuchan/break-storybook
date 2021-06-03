@@ -2,7 +2,7 @@ import React from 'react';
 import { CardGrade } from '../../Components/CardGrade/CardGrade';
 import { cardGradeListType } from '../../types/CardGradeType';
 
-const cardGradeList: cardGradeListType[] = [
+export const cardGradeList: cardGradeListType[] = [
   {
     id: 0,
     title: 'PSA 10',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { CardGrade, CardGradeStoryProps } from './CardGrade';
-import * as GradeStories from './top/Grade.stories';
+// import { cardGradeList } from '../../pages/CardPage/CardPage';
 
 export default {
   title: 'CardGrade',
@@ -9,18 +9,20 @@ export default {
 } as Meta;
 
 const Template: Story<CardGradeStoryProps> = args => <CardGrade {...args} />;
-
+// cardGrade에 카드페이지에 있는 cardGradeList 배열을 또 가져와야할지 ....
 export const Default = Template.bind({});
 Default.args = {
   size: 'normal',
   selected: false,
-  // cardGrades: [
-  //   { ...GradeStories.Default.args?.grade, title: 'PSA 10', subTitle: 'Gem Mint' },
-  //   { ...GradeStories.Default.args?.grade, title: 'brg 10', subTitle: 'Gem Mint' },
-  //   { ...GradeStories.Default.args?.grade, title: 'brg 9', subTitle: 'Mint' },
-  //   { ...GradeStories.Default.args?.grade, title: 'break A', subTitle: 'Mint' },
-  //   { ...GradeStories.Default.args?.grade, title: 'break B', subTitle: 'Mid quality raw cards' },
-  // ],
+  cardGrade: {
+    id: 0,
+    title: 'PSA 10',
+    subTitle: 'Gem Mint',
+    count: 71,
+    minPrice: '3,950,000',
+    maxPrice: '2,600,000',
+    lastPrice: '3,100,000',
+  },
 };
 
 export const Selected = Template.bind({});

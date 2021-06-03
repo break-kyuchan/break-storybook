@@ -7,7 +7,7 @@ import { Grade } from './top/Grade';
 export interface CardGradeStoryProps {
   size?: string;
   selected?: boolean;
-  cardGrade?: cardGradeListType;
+  cardGrade: cardGradeListType;
 }
 
 export const CardGrade: React.FC<CardGradeStoryProps> = ({

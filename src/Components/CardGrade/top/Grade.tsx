@@ -14,7 +14,7 @@ export interface GradeStoryProps {
 }
 
 // logo이미지는 미적용, 실제 작업에서는 백엔드에서 넘겨주는 걸로 사용할거 같아서 일단 div태그로 회색박스 적용!
-export function Grade({ grade: { title, subTitle }, styles }: GradeStoryProps) {
+export const Grade: React.FC<GradeStoryProps> = ({ grade: { title, subTitle }, styles }) => {
   return (
     <Row>
       <Col>
@@ -24,24 +24,6 @@ export function Grade({ grade: { title, subTitle }, styles }: GradeStoryProps) {
       <Logo styles={styles} />
     </Row>
   );
-}
-// export const Grade: React.FC<GradeStoryProps> = ({ grade: { title, subTitle }, styles }) => {
-//   return (
-//     <Row>
-//       <Col>
-//         <Title styles={styles}>{title}</Title>
-//         <SubTitle>{subTitle}</SubTitle>
-//       </Col>
-//       <Logo styles={styles} />
-//     </Row>
-//   );
-// };
-
-Grade.defaultProps = {
-  grade: {
-    title: 'normal',
-    subTitle: 'normal',
-  },
 };
 
 type StyleProps = {
