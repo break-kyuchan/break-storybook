@@ -1,12 +1,12 @@
 import React from 'react';
-import { Header } from "./Components/Header/Templates/Header"
+// import { Header } from "./Components/Header/Templates/Header"
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Header/>
-    </>
+    <Router>
+      <AppRouter />
+    </Router>
   );
 }
-
-export default App;

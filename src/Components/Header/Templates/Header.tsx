@@ -1,27 +1,25 @@
-import React from 'react'
-import styled from "styled-components";
-import { Menu } from "../Molecules/Menu"
+import React from 'react';
+import styled from 'styled-components';
+import { Menu } from '../Molecules/Menu';
 
-
-
-export const Header :React.FC =()=>{
-    return (
-        <HeaderWrap>
-            <Logo src="/break_logo192.png"/>
-            <Menu/>
-        </HeaderWrap>
-    )
-}
+export const Header: React.FC = () => {
+  return (
+    <HeaderWrap>
+      <Logo src="/break_logo192.png" />
+      <Menu />
+    </HeaderWrap>
+  );
+};
 
 const HeaderWrap = styled.div`
-display:flex;
-justify-content: space-between;
-align-items: center;
-width: 1440px;
-height: 86px;
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 86px;
+`;
 
 const Logo = styled.img`
-width: 128px;
-height: 28px;
-`
+  width: 128px;
+  height: 28px;
+`;
