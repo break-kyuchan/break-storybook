@@ -9,4 +9,7 @@ export default {
 
 const Template: Story = args => <SearchTagButton {...args} />;
 
-export const Default = Template.bind({});
+export const Cards = Template.bind({});
+Cards.args={
+  title:"Cards",
+}

@@ -16,8 +16,6 @@ export const SearchTagButton:React.FC<SearchTagButtonProps> = ({
         SetChangeColor(!changeColor)
     }
 
-    console.log(changeColor)
-
     return (
         <SearchTag check={changeColor} onClick={handleColor}>
          <span>{title}</span>

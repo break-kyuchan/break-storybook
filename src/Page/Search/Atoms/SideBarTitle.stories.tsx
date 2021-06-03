@@ -9,4 +9,17 @@ export default {
 
 const Template: Story = args => <SideBarTitle {...args} />;
 
-export const Default = Template.bind({});
+export const ProductType = Template.bind({});
+ProductType.args={
+  title:"PRODUCT TYPE"
+}
+
+export const Available = Template.bind({});
+Available.args={
+  title:"AVAILABILITY"  
+}
+
+export const GradeType = Template.bind({});
+GradeType.args={
+  title:"GRADE TYPE"  
+}
