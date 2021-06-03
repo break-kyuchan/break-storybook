@@ -36,6 +36,7 @@ margin-top: 10px;
 span{
     font-size:14px;
     color:#5481B7;
+    
 &:last-child{
     margin-left: 10px;
 }
